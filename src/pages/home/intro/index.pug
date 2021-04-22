@@ -1,19 +1,29 @@
 section.intro
   .container
     .intro__content
-      h1.intro__title Профессиональные знания и сервисы для миллионов специалистов
+      h1.intro__title Профессиональные знания и&nbsp;сервисы для миллионов специалистов
       .intro__buttons
-        a.intro__button(href="#") 
-          img.intro__button-img(src="images/accountant.svg", alt="Accountant")
+        a.intro__button(href="#")
+          picture
+            source(srcset="images/accountant-mobile.svg", media="(max-width: 768px)" )
+            img.intro__button-img(src="images/accountant.svg", alt="Accountant")
           | Бухгалтеров
-        a.intro__button(href="#") 
-          img.intro__button-img(src="images/lawyer.svg", alt="Lawyer")
+        a.intro__button(href="#")
+          picture
+            source(srcset="images/lawyer-mobile.svg", media="(max-width: 768px)" )
+            img.intro__button-img(src="images/lawyer.svg", alt="Lawyer")
           | Юристов
-        a.intro__button(href="#") 
-          img.intro__button-img(src="images/financier.svg", alt="Financier")
+        a.intro__button(href="#")
+          picture
+            source(srcset="images/financier-mobile.svg", media="(max-width: 768px)" )
+            img.intro__button-img(src="images/financier.svg", alt="Financier")
           | Финансистов
-        a.intro__button(href="#") 
-          img.intro__button-img(src="images/personnel-officer.svg", alt="Personnel Office")
+        a.intro__button(href="#")
+          picture 
+            source(srcset="images/personnel-officer-mobile.svg", media="(max-width: 768px)" )
+            img.intro__button-img(src="images/personnel-officer.svg", alt="Personnel Office")
           | Кадровиков
         a.intro__button.intro__button--all(href="#") Все
-          img.intro__button-img(src="images/arrow-down.svg", alt="Arrow down")
+          picture
+            source(srcset="images/arrow-down-mobile.svg", media="(max-width: 768px)" )
+            img.intro__button-img.intro__button-img--all(src="images/arrow-down.svg", alt="Arrow down")
