@@ -1,0 +1,90 @@
+.intro
+  padding-top: 153px
+  padding-bottom: 309px
+
+  +max-w($laptop)
+    padding-top: 157px
+
+  +max-w($laptop-md)
+    padding-top: 131px
+
+  +max-w($mobile-lg)
+    padding-top: 66px
+
+.intro__content
+  max-width: 958px
+
+.intro__title
+  margin-bottom: 54px
+  color: #fff
+  font-weight: $font-weight-black
+  font-size: 64px
+  line-height: 1.25
+
+  +max-w($laptop)
+    margin-bottom: 51px
+    font-size: 58px
+
+  +max-w($laptop-md)
+    margin-bottom: 36px
+    font-size: 44px
+
+  +max-w($mobile-lg)
+    margin-bottom: 27px
+    font-size: 28px
+
+.intro__buttons
+  display: flex
+
+  +max-w($mobile-lg)
+    flex-wrap: wrap
+
+.intro__button
+  display: flex
+  align-items: center
+  margin-right: 34px
+  padding: 12px 21px
+  color: #fff
+  background-color: rgba(153, 153, 153, 0.4)
+  border-radius: 7px
+  font-size: 20px
+  line-height: 1.25
+  text-decoration: none
+
+  &:last-child
+    margin-right: 0
+
+  +max-w($laptop)
+    margin-right: 28px
+    padding: 7px 17px
+    font-size: 18px
+
+  +max-w($laptop-md)
+    margin-right: 22px
+    padding: 2px 8px
+    font-size: 14px
+  
+  +max-w($mobile-lg)
+    margin-right: 6px
+    margin-bottom: 16px
+    padding: 9px 17px
+    font-size: 13px
+
+.intro__button--all
+  padding: 11px 22px
+  background-color: transparent
+  border: 2px solid rgba(153, 153, 153, 0.4)
+
+  +max-w($laptop-md)
+    padding: 2px 8px
+
+  +max-w($mobile-lg)
+    padding: 9px 12px
+
+.intro__button-img
+  margin-right: 4px
+  vertical-align: bottom
+
+.intro__button-img--all
+  margin-right: 0
+  margin-left: 4px
