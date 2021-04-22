@@ -60,7 +60,8 @@
   width: 24px
   height: 2px
   background-color: $color-text-base
-  transition: transform .3s, top .3s, right .3s
+  transition-property: transform, top, right
+  transition-duration: .3s 
 
   &::after
     content: ""
@@ -70,7 +71,8 @@
     width: 24px
     height: 2px
     background-color: $color-text-base
-    transition: transform .3s, top .3s, right .3s, width .3s
+    transition-property: top, right, width
+    transition-duration: .3s 
 
   &::before
     content: ""
