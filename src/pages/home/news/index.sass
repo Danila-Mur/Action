@@ -1,0 +1,97 @@
+.news
+  padding: 128px 0
+
+.news__title
+  color: #F1361D
+  font-size: 48px
+  line-height: 1.25
+  letter-spacing: -0.005em
+
+  +max-w($laptop-md)
+    font-size: 32px
+    line-height: 1.25
+    letter-spacing: -0.005em
+
+  +max-w($mobile-lg)
+    font-size: 24px
+
+.news__subtitle
+  display: block
+  margin-bottom: 63px
+  color: #111111
+  font-size: 48px
+  line-height: 1.25
+  letter-spacing: -0.005em
+
+  +max-w($laptop-md)
+    font-size: 32px
+    line-height: 1.25
+    letter-spacing: -0.005em
+  
+  +max-w($mobile-lg)
+    margin-bottom: 30px
+    font-size: 24px
+
+.news__list
+  display: grid
+  grid-template-columns: repeat(2, 624px)
+  gap: 96px 24px
+  margin-bottom: 96px
+
+  +max-w($laptop)
+    grid-template-columns: repeat(2, 528px)
+
+  +max-w($laptop-md)
+    grid-template-columns: repeat(2, 352px)
+    gap: 64px 19px
+    margin-bottom: 72px
+
+  +max-w($mobile-lg)
+    grid-template-columns: 1fr
+    row-gap: 30px
+    margin-bottom: 30px
+
+.news__item
+  display: flex
+  flex-direction: column
+  text-decoration: none
+
+.news__item-img
+  margin-bottom: 32px
+
+.news__item-title
+  color: #F1361D
+  font-size: 24px
+  line-height: 1.35
+
+  +max-w($laptop-md)
+    font-size: 20px
+
+.news__item-subtitle
+  color: #111111
+  font-size: 24px
+  line-height: 1.35
+
+  +max-w($laptop-md)
+    font-size: 20px
+
+
+.news__link
+  display: flex
+  justify-content: center
+  color: $color-text-base
+  font-size: 24px
+  line-height: 1
+  text-decoration: none
+
+  +max-w($laptop-md)
+    font-size: 20px
+    line-height: 1.2
+
+  +max-w($mobile-lg)
+    justify-content: flex-start
+    font-size: 14px
+    line-height: 1.7
+
+.news__link-img
+  margin-left: 8px
