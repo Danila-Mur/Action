@@ -11,8 +11,23 @@ section.career
         a.career__link(href="#") Перейти к вакансиям
           img.career__link-img(src="images/arrow-right-red.svg", alt="Arrow right")
       .career__images
-        img.career__image.career__image--1(src="images/career-img-1.png", alt="Career image")
-        img.career__image.career__image--2(src="images/career-img-2.png", alt="Career image")
-        img.career__image.career__image--3(src="images/career-img-3.png", alt="Career image")
-        img.career__image.career__image--4(src="images/career-img-4.png", alt="Career image")
-        img.career__image.career__image--5(src="images/career-img-5.png", alt="Career image")
+        picture 
+          source(srcset="images/career-img-1-mobile.png", media="(max-width: 767px)" )
+          source(srcset="images/career-img-1-laptop.png", media="(max-width: 1170px)" )
+          img.career__image.career__image--1(src="images/career-img-1.png", alt="Career image")
+        picture
+          source(srcset="images/career-img-2-mobile.png", media="(max-width: 767px)" )
+          source(srcset="images/career-img-2-laptop.png", media="(max-width: 1170px)" )
+          img.career__image.career__image--2(src="images/career-img-2.png", alt="Career image")
+        picture 
+          source(srcset="images/career-img-3-mobile.png", media="(max-width: 767px)" )
+          source(srcset="images/career-img-3-laptop.png", media="(max-width: 1170px)" )
+          img.career__image.career__image--3(src="images/career-img-3.png", alt="Career image")
+        picture 
+          source(srcset="images/career-img-4-mobile.png", media="(max-width: 767px)" )
+          source(srcset="images/career-img-4-laptop.png", media="(max-width: 1170px)" )
+          img.career__image.career__image--4(src="images/career-img-4.png", alt="Career image")
+        picture
+          source(srcset="images/career-img-5-mobile.png", media="(max-width: 767px)" )
+          source(srcset="images/career-img-5-laptop.png", media="(max-width: 1170px)" )
+          img.career__image.career__image--5(src="images/career-img-5.png", alt="Career image")

@@ -2,6 +2,7 @@
   padding-top: 155px
   padding-bottom: 128px
   background-color: #fff
+  overflow: hidden
 
 .career__inner
   display: flex
@@ -9,11 +10,22 @@
 .career__content
   max-width: 622px
 
+  +max-w($laptop-md)
+    max-width: 413px
+
 .career__titile
   color: #F1361D
   font-size: 48px
   line-height: 1.25
   letter-spacing: -0.005em
+
+  +max-w($laptop-md)
+    font-size: 32px
+    line-height: 1.35
+
+  +max-w($mobile-lg)
+    font-size: 24px
+    line-height: 1.25
 
 .career__subtitile
   display: block
@@ -23,10 +35,27 @@
   line-height: 1.25
   letter-spacing: -0.005em
 
+  +max-w($laptop-md)
+    font-size: 32px
+    line-height: 1.35
+
+  +max-w($mobile-lg)
+    font-size: 24px
+    line-height: 1.25
+
 .career__text
   margin-bottom: 205px
   font-size: 24px
   line-height: 1.35
+
+  +max-w($laptop-md)
+    margin-bottom: 139px
+    font-size: 20px
+
+  +max-w($mobile-lg)
+    margin-bottom: 43px
+    font-size: 14px
+    line-height: 1.4
 
 .career__link
   display: flex
@@ -35,6 +64,9 @@
   font-size: 24px
   line-height: 1
   text-decoration: none
+
+  +max-w($mobile-lg)
+    display: none
 
 .career__images
   position: relative
