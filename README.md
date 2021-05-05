@@ -1,4 +1,4 @@
-# FRONTEND BOILERPLATE
+# Action
 
 ## Install
 ```sh
