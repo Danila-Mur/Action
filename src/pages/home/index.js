@@ -7,4 +7,6 @@ import "./news";
 import "./career";
 import './statistics'
 
+import "./state";
+
 export default () => {};
