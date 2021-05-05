@@ -1,4 +1,72 @@
 .footer
-  flex-grow: 0
-  flex-shrink: 0
-  flex-basis: auto
+  padding-top: 65px
+  padding-bottom: 128px
+  background-color: #111111
+
+.footer__content
+  display: grid
+  grid-template-columns: 129px 86px 408px 268px
+  column-gap: 130px
+
+  +max-w($laptop)
+    column-gap: 70px
+
+  +max-w($laptop-md)
+    grid-template-columns: 91px 67px 289px 168px
+    column-gap: 30px
+
+  +max-w($mobile-lg)
+    grid-template-columns: 1fr
+    row-gap: 24px
+
+.footer__info
+  display: flex
+  flex-direction: column
+
+.footer__info-company
+  display: block
+  margin-bottom: 18px
+  color: #F7F6F4
+  font-size: 18px
+  line-height: 1.6
+
+  +max-w($laptop-md)
+    font-size: 14px
+    font-weight: $font-weight-bold
+  
+  +max-w($mobile-lg)
+    margin-bottom: 16px
+
+.footer__info-address
+  color: #F7F6F4
+  font-size: 18px
+  line-height: 1.6
+
+  +max-w($laptop-md)
+    font-size: 14px
+    font-weight: $font-weight-bold 
+
+.footer__directions
+  display: flex
+  flex-direction: column
+
+  +max-w($mobile-lg)
+    grid-row: 2
+
+.footer__directions-address
+  font-size: 18px
+  line-height: 1.7
+  color: #F7F6F4
+
+  +max-w($laptop-md)
+    font-size: 14px
+    font-weight: $font-weight-bold
+
+.footer__directions-link
+  color: $color-text-base
+  font-size: 18px
+  line-height: 1.7
+  text-decoration: none
+
+  +max-w($laptop-md)
+    font-size: 14px

@@ -1,0 +1,98 @@
+.technologies
+  padding: 128px 0
+  background-color: #F7F6F4
+
+.technologies__title
+  color: #F1361D
+  font-size: 48px
+  line-height: 1.25
+  letter-spacing: -0.005em
+
+  +max-w($laptop-md)
+    font-size: 32px
+    line-height: 1.35
+
+.technologies__subtitle
+  display: block
+  margin-bottom: 64px
+  color: #111111
+  font-size: 48px
+  line-height: 1.25
+  letter-spacing: -0.005em
+
+  +max-w($laptop-md)
+    margin-bottom: 43px
+    font-size: 32px
+    line-height: 1.35
+
+
+.technologies__cards
+  display: flex
+  overflow: hidden
+
+.technologies__card
+  margin-right: 24px
+  padding: 32px
+  background-color: #fff
+
+  &:last-child
+    margin-right: 0
+
+  +max-w($mobile-lg)
+    min-width: 238px
+    margin-right: 16px
+
+.technologies__card-img
+  display: block
+  margin-bottom: 91px
+
+  +max-w($laptop)
+    margin-bottom: 30px
+
+.technologies__card-title
+  display: block
+  margin-bottom: 8px
+  color: #F1361D
+  font-size: 24px
+
+  +max-w($laptop-md)
+    font-size: 18px
+    line-height: 1.35
+
+.technologies__card-text
+  font-size: 18px
+
+  +max-w($laptop-md)
+    font-size: 14px
+    line-height: 1.35
+
+.technologies__cards-slider
+  position: relative
+
+.button__slider
+  position: absolute
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 64px
+  height: 64px
+  border: none  
+  border-radius: 50%
+  background-color: #F1361D
+  outline: none
+  z-index: 10
+
+  +max-w($laptop-md)
+    display: none !important
+
+
+.button__slider--next
+  top: 172px
+  right: -10px
+
+.button__slider--prev
+  top: 172px
+  left: -42px
+
+.slick-disabled
+  display: none !important

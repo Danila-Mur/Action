@@ -1,0 +1,27 @@
+section.products
+  .container 
+    h2.products__title Продукты
+    .products__inner
+      .products__list
+        .products__item
+          span.products__item-count 01
+          span.products__item-title Справочные системы
+          span.products__item-description Понятный язык и своевременность
+        .products__item
+          span.products__item-count 02
+          span.products__item-title Онлайн-консталтинг
+          span.products__item-description Отвечают очень умные эксперты вплоть доминистра экономики и юстиции
+        .products__item
+          span.products__item-count.products__item-count--active 03
+          span.products__item-title.products__item-title--active Онлайн-обучение
+          span.products__item-description.products__item-description--active Дипломы государственного образца Чем еще выделяются наши школы?
+        .products__item
+          span.products__item-count 04
+          span.products__item-title Профессиональные СМИ
+          span.products__item-description Аудитория более 2 миллионов специалистов в месяц; в электронном и печатном виде
+      .products__content
+        .products__content-item
+        picture
+          source(srcset="images/product-3-tablet.png", media="(max-width: 767px)" )
+          source(srcset="images/product-3-laptop.png", media="(max-width: 1170px)" )
+          img.products__img(src="images/product-3.png", alt="Product")

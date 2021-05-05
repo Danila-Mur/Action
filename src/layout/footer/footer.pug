@@ -1,1 +1,23 @@
-footer.footer FOOTER
+footer.footer
+  .container
+    .footer__content
+      a.footer__logo(href="/")
+        picture
+          source(srcset="images/logo-light-mobile.svg", media="(max-width: 1170px)" )
+          img.logo(src="images/logo-light.svg", alt="Logo")
+      nav.nav
+        ul.nav__list.nav__list--foter
+          li.nav__item
+            a.nav__link(href="#") Новости
+          li.nav__item
+            a.nav__link(href="#") Компания
+          li.nav__item
+            a.nav__link(href="#") Карьера
+          li.nav__item
+            a.nav__link(href="#") Контакты
+      .footer__info
+        span.footer__info-company ООО «Актион-диджитал», ИНН/КПП 7715670503/771501001, ОГРН 107 776 141 86 24
+        span.footer__info-address 127015, г.Москва, ул. Новодмитровская, дом 5А, стр.8, эт.6, помещение 24
+      .footer__directions
+        span.footer__directions-address Новодмитровская ул., 5а, стр. 8
+        a.footer__directions-link(href="#")  Схема проезда
