@@ -1,6 +1,7 @@
 import "./index.sass";
 import "./index.pug";
 import "./intro";
+import "./products";
 import "./technologies";
 
 import "./news";

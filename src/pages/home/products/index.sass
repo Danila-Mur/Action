@@ -1,0 +1,160 @@
+.products
+  padding-top: 128px
+  padding-bottom: 50px
+  background-color: #fff
+
+.products__title
+  margin-bottom: 44px
+  color: #F1361D
+  font-size: 48px
+  line-height: 1.25
+  letter-spacing: -0.005em
+
+  +max-w($laptop)
+    margin-bottom: 54px
+
+  +max-w($laptop-md)
+    margin-bottom: 35px
+    font-size: 32px
+
+.products__inner
+  display: flex
+  justify-content: space-between
+  // align-items: center
+
+  +max-w($mobile-lg)
+    flex-direction: column-reverse
+    overflow: hidden
+
+.products__list
+  max-width: 408px
+  padding-top: 40px
+  padding-bottom: 72px
+  border-top: 2px solid #000000
+  border-bottom: 2px solid #000000
+
+  +max-w($laptop)
+    max-width: 346px
+    padding-bottom: 56px
+
+  +max-w($laptop-md)
+    max-width: 232px
+    padding-top: 23px
+    padding-bottom: 0
+
+  +max-w($mobile-lg)
+    display: flex
+    border: none
+
+.products__item
+  display: flex
+  flex-direction: column
+  margin-bottom: 45px
+
+  &:last-child
+    margin-bottom: 0
+
+  +max-w($laptop-md)
+    margin-bottom: 31px
+  
+  +max-w($mobile-lg)
+    margin-right: 40px
+    margin-bottom: 0
+
+.products__item-count
+  font-size: 24px
+  line-height: 1.25
+
+  +max-w($laptop)
+    font-size: 14px
+    line-height: 1.2
+
+.products__item-count--active
+  color: #F1361D
+
+.products__item-title
+  margin-bottom: 12px
+  font-size: 24px
+  line-height: 1.25
+
+  +max-w($laptop)
+    font-size: 20px
+
+  +max-w($laptop)
+    font-size: 14px
+    line-height: 1.2
+
+.products__item-title--active
+  color: #001324
+
+.products__item-description
+  font-size: 20px
+  line-height: 1.35
+  letter-spacing: -0.005em
+
+  +max-w($laptop)
+    font-size: 17px
+  
+  +max-w($laptop-md)
+    font-size: 12px
+
+.products__item-description--active
+  font-weight: $font-weight-medium
+
+.products__content
+  position: relative
+  padding: 77px 122px 60px 119px
+  background-color: #F7F6F4
+
+  +max-w($laptop)
+    padding: 77px 96px 37px 113px
+
+  +max-w($laptop-md)
+    padding: 0
+
+
+.products__content-item
+  position: absolute
+
+  &::before
+    content: ""
+    position: absolute
+    top: -77px
+    right: 26px
+    width: 92px
+    height: 2px
+    background-color: #F1361D
+  
+  &::after
+    content: ""
+    position: absolute
+    top: 675px
+    left: -119px
+    width: 92px
+    height: 2px
+    background-color: #F1361D
+
+  +max-w($laptop)
+
+    &::before
+      top: -76px
+      right: 20px
+
+    &::after
+      top: 598px
+      left: -113px
+
+  +max-w($laptop-md)
+
+    &::before
+      top: 0px
+      right: -91px
+
+    &::after
+      top: 503px
+      left: 0px
+
+  +max-w($mobile-lg)
+
+    &::after
+      top: 278px
