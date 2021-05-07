@@ -2,7 +2,7 @@
   padding: 128px 0
   background: #001324 url("./state-bg.svg")
 
-  +max-w($mobile-lg)
+  +max-w($tablet)
     background-image: none
 
 .state__title
@@ -11,11 +11,11 @@
   line-height: 1.25
   letter-spacing: -0.005em
 
-  +max-w($laptop-md)
+  +max-w($laptop)
     font-size: 32px
     line-height: 1.35
 
-  +max-w($mobile-lg)
+  +max-w($tablet)
     font-size: 24px
     line-height: 1.25
 
@@ -27,14 +27,17 @@
   line-height: 1.25
   letter-spacing: -0.005em
 
-  +max-w($laptop-md)
+  +max-w($laptop)
     margin-bottom: 47px
     font-size: 32px
     line-height: 1.35
   
-  +max-w($mobile-lg)
+  +max-w($tablet)
     font-size: 24px
     line-height: 1.25
+
+.state__cards-slider
+  position: relative
 
 .state__cards
   // display: grid
@@ -61,10 +64,10 @@
     background: #FFFFFF
     opacity: 0.1
 
-  +max-w($laptop-md)
+  +max-w($laptop)
     min-height: 297px
 
-  +max-w($mobile-lg)
+  +max-w($tablet)
     min-height: 335px
 
 .state__card-title
@@ -75,7 +78,7 @@
   font-weight: $font-weight-bold
   line-height: 1.25
 
-  +max-w($laptop-md)
+  +max-w($laptop)
     font-size: 20px
     line-height: 1.5
 
@@ -85,6 +88,14 @@
   line-height: 1.45
   opacity: 0.5
 
-  +max-w($laptop-md)
+  +max-w($laptop)
     font-size: 14px
     line-height: 1.35
+
+.button__slider--next
+  top: 172px
+  right: -10px
+
+.button__slider--prev
+  top: 172px
+  left: -42px

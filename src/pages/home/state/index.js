@@ -6,9 +6,8 @@ $(".state__cards").slick({
   infinite: false,
   slidesToShow: 3,
   slidesToScroll: 1,
-  arrows: false,
-  // nextArrow: ".button__slider--next",
-  // prevArrow: ".button__slider--prev",
+  nextArrow: ".button__slider--next",
+  prevArrow: ".button__slider--prev",
   responsive: [
     {
       breakpoint: 766,

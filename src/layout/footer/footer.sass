@@ -8,14 +8,14 @@
   grid-template-columns: 129px 86px 408px 268px
   column-gap: 130px
 
-  +max-w($laptop)
+  +max-w($destop)
     column-gap: 70px
 
-  +max-w($laptop-md)
+  +max-w($laptop)
     grid-template-columns: 91px 67px 289px 168px
     column-gap: 30px
 
-  +max-w($mobile-lg)
+  +max-w($tablet)
     grid-template-columns: 1fr
     row-gap: 24px
 
@@ -30,11 +30,11 @@
   font-size: 18px
   line-height: 1.6
 
-  +max-w($laptop-md)
+  +max-w($laptop)
     font-size: 14px
     font-weight: $font-weight-bold
   
-  +max-w($mobile-lg)
+  +max-w($tablet)
     margin-bottom: 16px
 
 .footer__info-address
@@ -42,7 +42,7 @@
   font-size: 18px
   line-height: 1.6
 
-  +max-w($laptop-md)
+  +max-w($laptop)
     font-size: 14px
     font-weight: $font-weight-bold 
 
@@ -50,7 +50,7 @@
   display: flex
   flex-direction: column
 
-  +max-w($mobile-lg)
+  +max-w($tablet)
     grid-row: 2
 
 .footer__directions-address
@@ -58,7 +58,7 @@
   line-height: 1.7
   color: #F7F6F4
 
-  +max-w($laptop-md)
+  +max-w($laptop)
     font-size: 14px
     font-weight: $font-weight-bold
 
@@ -68,5 +68,5 @@
   line-height: 1.7
   text-decoration: none
 
-  +max-w($laptop-md)
+  +max-w($laptop)
     font-size: 14px

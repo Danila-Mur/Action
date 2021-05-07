@@ -39,6 +39,16 @@
   +max-w($tablet)
     flex-wrap: wrap
 
+.intro__buttons-additional
+  display: none
+  margin-top: 30px
+
+  +max-w($tablet)
+    flex-wrap: wrap
+
+.intro__buttons-additional--open
+  display: flex !important
+
 .intro__button
   display: flex
   align-items: center
@@ -74,6 +84,7 @@
   padding: 11px 22px
   background-color: transparent
   border: 2px solid rgba(153, 153, 153, 0.4)
+  cursor: pointer
 
   +max-w($laptop)
     padding: 2px 8px
@@ -88,3 +99,7 @@
 .intro__button-img--all
   margin-right: 0
   margin-left: 4px
+
+.intro__button-img--active
+  transform: rotate(-180deg)
+  transition: transform 0.5s 
